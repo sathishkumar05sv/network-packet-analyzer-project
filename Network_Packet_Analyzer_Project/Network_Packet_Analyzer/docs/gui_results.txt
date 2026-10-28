@@ -1,0 +1,2 @@
+GUI CHECKS PASSED: demo import, table, metrics, decoded selection, DNS filter, hex view, CSV export, PCAP reopen, statistics, IPv6 filter and reset.
+Saved four real application screenshots to docs/screenshots

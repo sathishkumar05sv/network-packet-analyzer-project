@@ -1,0 +1,74 @@
+{
+  "tool": "TShark (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3).",
+  "capture": "samples/demo_capture.pcap",
+  "checks": [
+    {
+      "wireshark_display_filter": "(none)",
+      "expected_frames": 37,
+      "observed_frames": 37,
+      "result": "PASS"
+    },
+    {
+      "wireshark_display_filter": "dns",
+      "expected_frames": 8,
+      "observed_frames": 8,
+      "result": "PASS"
+    },
+    {
+      "wireshark_display_filter": "udp",
+      "expected_frames": 12,
+      "observed_frames": 12,
+      "result": "PASS"
+    },
+    {
+      "wireshark_display_filter": "tcp",
+      "expected_frames": 14,
+      "observed_frames": 14,
+      "result": "PASS"
+    },
+    {
+      "wireshark_display_filter": "ip",
+      "expected_frames": 29,
+      "observed_frames": 29,
+      "result": "PASS"
+    },
+    {
+      "wireshark_display_filter": "ipv6",
+      "expected_frames": 5,
+      "observed_frames": 5,
+      "result": "PASS"
+    },
+    {
+      "wireshark_display_filter": "arp",
+      "expected_frames": 2,
+      "observed_frames": 2,
+      "result": "PASS"
+    },
+    {
+      "wireshark_display_filter": "icmp",
+      "expected_frames": 4,
+      "observed_frames": 4,
+      "result": "PASS"
+    },
+    {
+      "wireshark_display_filter": "icmpv6",
+      "expected_frames": 2,
+      "observed_frames": 2,
+      "result": "PASS"
+    },
+    {
+      "wireshark_display_filter": "dns && dns.qry.name == \"portal.example\"",
+      "expected_frames": 2,
+      "observed_frames": 2,
+      "result": "PASS"
+    }
+  ],
+  "field_comparison": {
+    "frames_checked": 37,
+    "fields": "frame number, captured length, source and destination addresses, TCP/UDP ports",
+    "result": "PASS"
+  },
+  "captured_bytes_sum": 2384,
+  "live_capture_tested": false,
+  "notes": "Independent offline verification with the Wireshark command-line analyzer. Wireshark GUI and target Windows live capture were not run."
+}

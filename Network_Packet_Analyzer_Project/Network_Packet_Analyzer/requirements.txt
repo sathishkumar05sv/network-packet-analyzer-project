@@ -1,0 +1,2 @@
+# Verified with Python 3.12.14 and Scapy 2.8.0.
+scapy==2.8.0

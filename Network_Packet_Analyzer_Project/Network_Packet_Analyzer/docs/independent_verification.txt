@@ -1,0 +1,16 @@
+TShark (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3).
+
+(none): expected 37, observed 37 - PASS
+dns: expected 8, observed 8 - PASS
+udp: expected 12, observed 12 - PASS
+tcp: expected 14, observed 14 - PASS
+ip: expected 29, observed 29 - PASS
+ipv6: expected 5, observed 5 - PASS
+arp: expected 2, observed 2 - PASS
+icmp: expected 4, observed 4 - PASS
+icmpv6: expected 2, observed 2 - PASS
+dns && dns.qry.name == "portal.example": expected 2, observed 2 - PASS
+
+All 37 frames agree on captured length, addresses and available transport ports.
+Captured-byte sum: 2384.
+Live capture and Windows-specific setup are not verified here.

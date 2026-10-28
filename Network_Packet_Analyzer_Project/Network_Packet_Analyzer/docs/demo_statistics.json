@@ -1,0 +1,68 @@
+{
+  "packets": 37,
+  "captured_bytes": 2384,
+  "duration_seconds": 4.5,
+  "average_packet_bytes": 64.43,
+  "protocols": {
+    "ARP": 2,
+    "DNS": 8,
+    "TCP": 14,
+    "UDP": 4,
+    "ICMP": 4,
+    "ICMPv6": 2,
+    "IPv4": 1,
+    "IPv6": 1,
+    "OTHER": 1
+  },
+  "ip_versions": {
+    "Non IP": 3,
+    "IPv4": 29,
+    "IPv6": 5
+  },
+  "top_sources": [
+    [
+      "192.0.2.10",
+      18
+    ],
+    [
+      "198.51.100.20",
+      8
+    ],
+    [
+      "203.0.113.53",
+      4
+    ],
+    [
+      "2001:db8::10",
+      3
+    ],
+    [
+      "2001:db8::20",
+      2
+    ]
+  ],
+  "top_destinations": [
+    [
+      "192.0.2.10",
+      13
+    ],
+    [
+      "198.51.100.20",
+      13
+    ],
+    [
+      "203.0.113.53",
+      4
+    ],
+    [
+      "2001:db8::20",
+      3
+    ],
+    [
+      "2001:db8::10",
+      2
+    ]
+  ],
+  "decode_errors": 0,
+  "retention_limit_reached": false
+}
